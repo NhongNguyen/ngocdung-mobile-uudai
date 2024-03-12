@@ -1,0 +1,173 @@
+.modal{
+    display:none;
+    position: fixed;
+    height: 100%;
+    top:0;
+    padding-top:10%;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    .container{
+      .modal-border{
+        padding: 15px 5px;
+        position: relative;
+        .close {
+          position: absolute;
+          right: 0;
+          margin-right: 10px;
+          margin-top: -25px;
+          color: black;
+          font-size: 35px;
+        }
+        .close:hover,
+        .close:focus {
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        border-radius: 20px;
+        width: 400px;
+        height: 480px;
+        background-color:$white-color;
+        &-top{
+          display: flex;
+          &-img{
+            border-radius: 30px 0px 0px 0px;
+            @include size(205px,190px);
+          }
+          &-text{
+            font-weight: bold;
+            &-1{
+              color:$secondary-color;
+              font-size: 22px;
+              margin-bottom: 10px;
+            }
+            &-2{
+              color:$primary-color;
+              padding-left: 5px;
+              font-size:18px;
+              margin-bottom: 10px;
+            }
+            &-3{
+              color:$secondary-color;
+              padding-left: 10px;
+              font-size:18px;
+              margin-bottom: 10px;
+            }
+            &-time{
+              display: flex;
+              background-color: #eaf2fe;
+              justify-content: space-between;
+              padding:15px 5px;
+              .same{
+                text-align: center;
+              }
+              .number{
+                font-size: 20px;
+                margin:-10px;
+              }
+              .text{
+                font-weight: normal;
+              }
+            }
+          }
+        }
+        &-bottom{
+          &-list{
+            display: inline-block;
+            &-item{
+              border: 1px solid $primary-color;
+              border-radius: 30px;
+              padding: 10px 15px;
+              margin:5px 25px 5px;
+              @include size(350px,40px);
+              
+            }
+            &-submit{
+              border: none;
+              border-radius: 30px;
+              background-color: $button-color;
+              color:$white-color;
+              font-weight: bold;
+              font-size: 12px;
+              padding: 10px 15px;
+              margin:10px 25px 15px;
+              @include size(350px,40px);
+            }
+          }
+        }
+      }
+    }
+    @include maxWidth(424px){
+      .container{
+        .modal-border{
+          width: 355px;
+          &-top{
+            &-img{
+              border-radius: 30px 0px 0px 0px;
+              @include size(180px,170px);
+            }
+            &-text{
+              &-1{
+                font-size: 19px;
+                margin-bottom: 5px;
+              }
+              &-2{
+                font-size:16px;
+                margin-bottom: 10px;
+              }
+              &-3{
+                font-size:16px;
+              }
+              &-time{
+                .number{
+                  font-size: 18px;
+                  margin:-10px;
+                }
+              }
+            }
+          }
+          &-bottom{
+            &-list{
+              margin-top: 20px;
+              &-item{
+                margin:5px 10px 5px;
+                @include size(320px,40px);
+              }
+              &-submit{
+                margin:10px 10px 15px;
+                @include size(320px,40px);
+              }
+            }
+          }
+        }
+      }
+    }
+    @include maxWidth(374px){
+      .container{
+        .modal-border{
+          width: 300px;
+          &-top{
+            &-img{
+              border-radius: 30px 0px 0px 0px;
+              @include size(130px,160px);
+            }
+          }
+          &-bottom{
+            &-list{
+              margin-top: 20px;
+              &-item{
+                margin:5px 10px 5px;
+                @include size(270px,40px);
+              }
+              &-submit{
+                margin:10px 10px 15px;
+                @include size(270px,40px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }

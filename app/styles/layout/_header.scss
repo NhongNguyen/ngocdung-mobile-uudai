@@ -1,0 +1,99 @@
+.header{
+  .container{
+    height:507px;
+    background: url("../images/header.jpg") no-repeat;
+    background-size: 430px;
+    .header-top-img{
+      height:225px;
+      width: 420px;
+      opacity: 0;
+    }
+    .header-bottom{
+      &-title{
+        color:$third-color;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 13px;
+      }
+      &-animation{
+        color:$secondary-color;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+        font-size: 14px;
+        padding: 0px 15px;
+        margin-top:10px;
+        animation-name: pulse;
+        animation-delay: 0s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes pulse{
+        0% {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+        50% {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        100% {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+      }
+      &-main{
+        &-title{
+          color: $primary-color;
+          font-weight: bold;
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+        &-list{
+          margin-bottom: 10px;
+          color:$primary-color;
+          &-item{
+            margin-bottom: 3px;
+          }
+        }
+      }
+      &-bottom{
+        color:$secondary-color;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15.5px;
+      }
+    }
+  }
+  @include maxWidth(424px){
+    .container{
+      height:507px;
+      background: url("../images/header.jpg") no-repeat;
+      background-size: 380px;
+      .header-top-img{
+        height:200px;
+        width: 420px;
+        opacity: 0;
+      }
+    }
+  }
+  @include maxWidth(374px){
+    .container{
+      height:507px;
+      background: url("../images/header.jpg") no-repeat;
+      background-size: 320px;
+      .header-top-img{
+        height:170px;
+        width: 420px;
+        opacity: 0;
+      }
+      .header-bottom-bottom{
+        font-size: small;
+      }
+    }
+  }
+}

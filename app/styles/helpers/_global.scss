@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+}
+img {
+    display:block;
+    max-width: 100%;
+}
+body {
+    font-family: $primary-font;
+    line-height: 1.5;
+    font-size: 14px;
+}
+input,button{
+    outline: none;
+    line-height: 1;   
+}
+button{
+    cursor:pointer;
+}

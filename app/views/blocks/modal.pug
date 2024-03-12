@@ -1,0 +1,50 @@
+section.modal(id="myModal")
+  .container
+    .modal-border
+      span(class="close") &times;
+      .modal-border-top
+        img(src="../images/header.jpg").modal-border-top-img
+        .modal-border-top-text
+          .modal-border-top-text-1 Chỉ 83.000Đ
+          .modal-border-top-text-2 Se khít chân lông
+          .modal-border-top-text-3 Duy nhất hôm nay
+          .modal-border-top-text-time 
+            .modal-border-top-text-time-days.same(id="list2")
+              .modal-border-top-text-time-days-number.number 00
+              .modal-border-top-text-time-days-text.text Days
+            .modal-border-top-text-time-hours.same
+              .modal-border-top-text-time-hours-number.number(id="hours2")
+              .modal-border-top-text-time-hours-text.text Hours
+            .modal-border-top-text-time-min.same
+              .modal-border-top-text-time-min-number.number(id="minutes2")
+              .modal-border-top-text-time-min-text.text Min
+            .modal-border-top-text-time-sec.same
+              .modal-border-top-text-time-sec-number.number(id="seconds2")
+              .modal-border-top-text-time-sec-text.text Sec
+      .modal-border-bottom
+       
+        .modal-border-bottom-list
+            input(type="text",placeholder="Họ và tên").modal-border-bottom-list-item
+            input(type="text",placeholder="Số điện thoại").modal-border-bottom-list-item
+            select.modal-border-bottom-list-item
+              option(value="") Chọn chi nhánh gần nhất
+              option(value="Hà Nội1 : 106 Phố Huế, Phường Ngô Thì Nhậm, Quận Hai Bà Trưng") Hà Nội1 : 106 Phố Huế, Phường Ngô Thì Nhậm, Quận Hai Bà Trưng
+              option(value="Hà Nội2 : 65 Trần Duy Hưng Phường Trung Hòa Quận Cầu Giấy") Hà Nội2 : 65 Trần Duy Hưng Phường Trung Hòa Quận Cầu Giấy
+              option(value="Hà Nội3 : 8 Khúc Thừa Dụ Phường Dịch Vọng Quận Cầu Giấy") Hà Nội3 : 8 Khúc Thừa Dụ Phường Dịch Vọng Quận Cầu Giấy
+              option(value="Hải Phòng : Số 2 Lô 7B Đường Lê Hồng Phong") Hải Phòng : Số 2 Lô 7B Đường Lê Hồng Phong
+              option(value="Quảng Ninh : Lô A1 15-16 Khu Monbay Trần Quốc Nghiễn") Quảng Ninh : Lô A1 15-16 Khu Monbay Trần Quốc Nghiễn
+              option(value="HCM1 : 36 Đường 3/2 Phường 12 Quận 10") HCM1 : 36 Đường 3/2 Phường 12 Quận 10
+              option(value="HCM4 : 392A Nguyễn Thị Thập Phường Tân Quy Quận 7") HCM4 : 392A Nguyễn Thị Thập Phường Tân Quy Quận 7
+              option(value="HCM6 : 185-187 Nguyễn Thái Học Phường Phạm Ngũ Lão Quận 1") HCM6 : 185-187 Nguyễn Thái Học Phường Phạm Ngũ Lão Quận 1
+              option(value="HCM7 : 33 Nguyễn Bỉnh Khiêm Đa Kao Quận 1") HCM7 : 33 Nguyễn Bỉnh Khiêm Đa Kao Quận 1
+              option(value="Bình Dương : 464 Đại Lộ Bình Dương Thành phố Thủ Dầu Một") Bình Dương : 464 Đại Lộ Bình Dương Thành phố Thủ Dầu Một
+              option(value="Biên Hòa : 220 Đường 30/4 Phường Thanh Bình Thành phố Biên Hòa") Biên Hòa : 220 Đường 30/4 Phường Thanh Bình Thành phố Biên Hòa
+              option(value="Vũng Tàu : 157 Nam Kỳ Khỏi Nghĩa Phường 3 Thành phố Vũng Tàu") Vũng Tàu : 157 Nam Kỳ Khỏi Nghĩa Phường 3 Thành phố Vũng Tàu
+              option(value="Cần Thơ : 234B Trần Hưng Đạo Phường An Nghiệp Quận Ninh Kiều") Cần Thơ : 234B Trần Hưng Đạo Phường An Nghiệp Quận Ninh Kiều
+              option(value="Vinh : Số 2 Trần Phú Phường Hồng Sơn Thành phố Vinh") Vinh : Số 2 Trần Phú Phường Hồng Sơn Thành phố Vinh
+              option(value="Đà Nẵng : 95 Nguyễn Văn Linh Phường Nam Dương Quận Hải Châu") Đà Nẵng : 95 Nguyễn Văn Linh Phường Nam Dương Quận Hải Châu
+              option(value="Nha Trang : 78 Lý Thánh Tôn Phường Lộc Thọ Tp. Nha Trang") Nha Trang : 78 Lý Thánh Tôn Phường Lộc Thọ Tp. Nha Trang
+              option(value="Buôn Ma Thuột : 2-4 Ngô Quyền Phường Thắng Lợi Thành phố Buôn Ma Thuột") Buôn Ma Thuột : 2-4 Ngô Quyền Phường Thắng Lợi Thành phố Buôn Ma Thuột
+              option(value="Phan Thiết : 154 Trần Hưng Đạo Phường Phú Thủy Thành phố Phan Thiết") Phan Thiết : 154 Trần Hưng Đạo Phường Phú Thủy Thành phố Phan Thiết
+            input(type="number",placeholder="Tuổi (không bắt buộc)").modal-border-bottom-list-item
+            input(type="submit",value="Đăng ký ngay").modal-border-bottom-list-submit
